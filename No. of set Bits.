@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*------------------------------Checking ith set bit in no--------------------------*/
 int main()
 {
     int n,count=0;
