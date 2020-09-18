@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+/*-------------USING LOOP----------------------------------------*/
+int count_digits( int n )
+{
+    int rem,count=0;
+    while(n != 0)
+    {
+        count += 1;
+        n = n/10;
+    }
+  return count;
+}
+
+int main()
+{
+    int n,p;
+    cin>>n;
+    p=count_digits(n);
+    cout<<p;
+   return 0;
+ }
+ /*---------------------------------------------------------------*/
+ 
+ /*-------------USING DIRECT FORMULA-------------------------------*/
+ int main()
+{
+    int n,p;
+    cin>>n;
+    p=floor(log10(n)+1);
+    cout<<p;
+   return 0;
+ }
+ /*-----------------------------------------------------------------*/
