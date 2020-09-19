@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+/*-----------------------------------------------------Using Navie Solution----------------*/
+string remove_spaces(string str)
+{
+   int l=str.length();
+   int i=0,j=0;
+   while(str[i])
+   {
+      if(str[i] != ' ')
+        str[j++] = str[i];
+      i++;
+   }
+   str[j]='\0';
+ return str;
+}
+
+int main()
+{
+    string str,s;
+    getline(cin,str);
+    s=remove_spaces(str);
+    cout<<s;
+   return 0;
+}
+
+
+/*-------------------------------------------Using Direct Formula------------------------------*/
+int main()
+{
+   string str;
+   getline(cin,str);
+   str.erase(remove(str.begin(),str.end(),' '),str.end()));
+   cout<<str;
+  return 0;
+}
+   
