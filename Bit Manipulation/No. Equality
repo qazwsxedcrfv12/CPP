@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int equal(int a, int b)
+{
+    if( !(a ^ b) )
+             return 1;
+   return 0;
+}
+
+int main()
+{
+   int a,b,p;
+       cin>>a>>b;
+  p=equal(a,b);
+   if(p==1)
+     cout<<"Equal";
+   else
+     cout<<"Not Equal";
+   return 0;
+}
