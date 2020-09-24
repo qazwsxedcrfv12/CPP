@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int addone(int x)
+{
+  int m = 1;
+  while(x & m)
+  {
+     x = x ^ m;
+     m <<= 1;
+  }
+  
+  x = x ^ m;
+  return x;
+}
+
+int main()
+{
+   int n;
+   cin>>n;
+     p = addone(n);
+   cout<<p;
+ return 0;
+}
+   
