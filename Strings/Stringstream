@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+#include<sstream>
+using namespace std;
+
+/*----------------------------------Convert string to integer*************************************************/
+
+int main()
+{
+   string str;
+   cin >> str;
+   
+   stringstream ss;
+   
+   ss << str;
+   
+   int n;
+   ss >> n;
+   
+   cout << n;
+  return 0;
+}
+/*************************************************************************************************************/
