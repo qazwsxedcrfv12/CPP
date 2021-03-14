@@ -23,3 +23,13 @@ int main()
  return 0;
 }
    
+// Another Method
+
+int main()
+{
+   int x;
+   cin>>x;
+   int c=-(~x);           // ~x=-(x+1)
+   cout<<c<<"\n";
+  return 0;
+}
