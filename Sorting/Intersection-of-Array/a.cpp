@@ -1,5 +1,5 @@
 // If the array does not contain Duplicates
-//Time Complexity O(n)
+//Time Complexity O(n+m)
 //Extra Auxilary Space O(1)
 
 
