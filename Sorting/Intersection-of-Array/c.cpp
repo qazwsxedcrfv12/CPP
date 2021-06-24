@@ -1,5 +1,5 @@
 //If Array is not sorted and also contains Duplicates
-//Time Complexity O(max(n,m))
+//Time Complexity O(n+m)
 //Extra Auxilary Space O(min(n,m))
 
 // Code
@@ -25,8 +25,8 @@ int main()
    for(int i=0; i<m; i++)
       cin>>b[i];
 
-   unordered_set<int>s(b.brgin(),b.end());   //if m is small  
- // unordered_set<int>s(a.brgin(),a.end());   //if m is small 
+   unordered_set<int>s(b.begin(),b.end());   //if m is small  
+ // unordered_set<int>s(a.begin(),a.end());   //if m is small 
  
   for(int i=0; i<n; i++)               //if m is small
   {
